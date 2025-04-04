@@ -1,0 +1,17 @@
+from tkinter import*
+class calculator:
+    def __init__(self,root):
+        
+        self.root=root
+        self.root.title('Calculator')
+        self.root.geometry("415x490+450+100")
+        self.root.configure(bg='white')
+        
+        self.MainFrame = Frame(self.root , bd=18 , width=400 , height=470 , relief=RIDGE , bg='powder blue')
+        self.MainFrame.grid()
+        self.WidgetFrame = Frame(self.MainFrame,bd=18,width=390,height=460,relief=RIDGE,bg='cadet blue')
+        self.WidgetFrame.grid()
+
+root=Tk()
+App=calculator(root)        
+root.mainloop()
